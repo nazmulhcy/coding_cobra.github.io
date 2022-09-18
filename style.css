@@ -35,7 +35,7 @@ header .logo navbar-active {
 .tap:link,
 .tab:active {
   /* background-color: rgb(251, 247, 247); */
-  color: black;
+  color: white;
   border: 2px solid darkblue;
   padding: 5px 20px;
   text-align: center;
