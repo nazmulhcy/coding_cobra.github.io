@@ -1,0 +1,187 @@
+/* .navbar {
+  /* background-color: rgb(187, 212, 236); 
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ccc;
+  /* position: sticky; 
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+body {
+  height: 100%;
+}
+.navbar {
+  background-image: linear-gradient(to right, rgb(140, 202, 16), red);
+}
+.navbar-active {
+  display: inline-block;
+}
+
+header .logo navbar-active {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 08) 100%
+  );
+}
+
+.block {
+  float: right;
+  /* padding: 25px; */
+  padding-right: 80px;
+  padding-top: 55px;
+}
+
+.tap:link,
+.tab:active {
+  /* background-color: rgb(251, 247, 247); */
+  color: black;
+  border: 2px solid darkblue;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.tap:hover {
+  background-color: rgb(5, 175, 19);
+  color: blue;
+  font-size: 20px;
+}
+.about {
+  background-image: linear-gradient(
+    to right,
+    rgba(8, 12, 12, 0.74) 0%,
+    rgb(0, 19, 112) 100%
+  );
+
+  position: relative;
+  text-align: center;
+  color: white;
+  top: -5px;
+}
+
+.contain {
+  font-family: "Potta One", cursive;
+  font-family: "Rubik Moonrocks", cursive;
+  position: relative;
+  /* display: flex; */
+  margin: 20px 20px;
+  text-align: left;
+  height: 400px;
+  width: 100%;
+  top: 25px;
+  left: 150px;
+  font-size: 20px;
+}
+.course div {
+  display: inline-block;
+}
+
+.course-items {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(18, 96, 230), yellow);
+}
+.info {
+  /* width: 900px; */
+}
+.img {
+  position: absolute;
+  margin-top: 0;
+}
+.course-items-elem {
+  padding: 20px;
+  position: absolute;
+  color: aliceblue;
+  background-color: black;
+
+  height: 150px;
+
+  bottom: 0;
+  right: 250px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+}
+.elem {
+  padding: 100px;
+  /* margin-bottom: 0px; */
+}
+
+#mid {
+  background-image: linear-gradient(to right, yellow, blue);
+}
+
+#mid .elem {
+  float: right;
+}
+#mid .course-items-elem {
+  right: 770px;
+  background-color: rgb(9, 9, 9);
+  margin-bottom: 20px;
+}
+.footer {
+  color: rgb(41, 44, 44);
+  /* background-color: black; */
+  margin-top: 100px;
+
+  display: inline-block;
+  /* border: 2px solid black; */
+  text-align: center;
+  width: 20%;
+  height: 200px;
+  margin-left: 50px;
+}
+.footer b {
+  text-align: left;
+}
+.footer-items {
+  margin-top: 50px;
+  background-color: rgb(218, 227, 234);
+}
+.footer-items-contain {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(53, 72, 72);
+  bottom: 100px;
+}
+.footer-index {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* cpp */
+.items_container {
+}
+.items {
+  display: flex;
+  justify-items: center;
+  margin: 20px;
+
+  justify-content: center;
+}
+.card {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+  .navbar {
+    max-width: 600px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li > img {
+    display: none;
+  }
+  .items {
+    flex-direction: column;
+  }
+}
