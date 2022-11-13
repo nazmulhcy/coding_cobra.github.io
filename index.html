@@ -6,8 +6,10 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Rubik+Moonrocks&display=swap');
       </style>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="pic/codingpic.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head> 
  
   <header>
@@ -18,8 +20,18 @@
             <li class="logo navbar-active"><img src="pic/logo.png" alt=""></li>
             <li class="block navbar-active"><a target="_blank" href="https://nazmulhcy.github.io/CodingCobra.github.io/" class="tap">Old Version</a></li>
             <li class="block navbar-active"><a href="https://docs.google.com/forms/d/e/1FAIpQLSefEECtE3UmPcRkMT1bwhAatRlR3gMMiIJNhfhZXxllUFQs1A/viewform?usp=sf_link" class="tap" >Contact</a></li>
-            <li class="block navbar-active"><a href="index.html" class="tap" >Courses</a></li>
+            <li class="block navbar-active"><input class="tab" id="buttonHoroquartz" type="button" value="Courses" onclick="showPopup();"></li>
           </ul>
+        </div>
+        <div  id="popUp">
+          <div  onclick="hidePopup();"> <i class="bi bi-x"> </i></div>
+
+         <div><a href="cpp.html">Introduction to C++</a></div>
+         <div><a href="web.html">Web Development</a></div>
+         <div><a href="aindroid.html">Android Development</a></div>
+         
+          <!-- <input type="button" value="<div>" onclick="hidePopup();"> -->
+            
         </div>
       </div>
     </div>
@@ -129,8 +141,30 @@
     </footer>
   
 <script>
-  // const tab = document.getElementsByClassName("tab");
-  // console.log(tab);
+
+function showPopup() {
+  $("#popUp").before('<div id=grayBack></div>');
+
+  var popupH = $("#popUp").height();
+  var popupW = $("#popUp").width();
+
+  //$("#popUp").css("margin-top", "-" + (popupH / 2 + 40) + "px");
+  //$("#popUp").css("margin-left", "-" + popupH / 2 + "px");
+
+  $("#grayBack").css('opacity', 0).fadeTo(300, 0.5, function() {
+    $("#popUp").fadeIn(500);
+  });
+}
+
+function hidePopup() {
+  $("#grayBack").fadeOut('fast', function() {
+    $(this).remove()
+  });
+
+  $("#popUp").fadeOut('fast', function() {
+    $(this).hide()
+  });
+}
   
 </script>
 
