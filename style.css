@@ -7,23 +7,28 @@
   left: 0;
   width: 100%;
 } */
+
 body {
-  height: 100%;
+  max-width: 100%;
 }
 .navbar {
-  background-image: linear-gradient(to right, rgb(140, 202, 16), red);
+  background-image: linear-gradient(
+    to right,
+    rgb(47, 85, 234),
+    rgb(192, 228, 29)
+  );
 }
 .navbar-active {
   display: inline-block;
 }
 
-header .logo navbar-active {
+/* header .logo navbar-active {
   background-image: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.3) 0%,
     rgba(0, 0, 0, 08) 100%
   );
-}
+} */
 
 .block {
   float: right;
@@ -31,14 +36,12 @@ header .logo navbar-active {
   padding-right: 80px;
   padding-top: 55px;
 }
-.tab{
-  color: blue;
-}
+
 .tap:link,
 .tab:active {
   /* background-color: rgb(251, 247, 247); */
-  color: white;
-  border: 2px solid darkblue;
+
+  /* border: 2px solid darkblue; */
   padding: 5px 20px;
   text-align: center;
   text-decoration: none;
@@ -46,14 +49,14 @@ header .logo navbar-active {
 }
 
 .tap:hover {
-  background-color: rgb(5, 175, 19);
+  /* background-color: rgba(5, 175, 19, 0.517); */
   color: blue;
   font-size: 20px;
 }
 .about {
   background-image: linear-gradient(
     to right,
-    rgba(8, 12, 12, 0.74) 0%,
+    rgb(183, 233, 0) 0%,
     rgb(0, 19, 112) 100%
   );
 
@@ -168,6 +171,86 @@ header .logo navbar-active {
 }
 .card {
   margin: 20px;
+}
+
+#buttonHoroquartz {
+  background-color: rgba(5, 175, 19, 0);
+  color: darkblue;
+  font-size: 15px;
+  border: none;
+  padding: 3px;
+}
+
+#buttonHoroquartz:hover {
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 1s;
+  color: blue;
+}
+#buttonHoroquartz:active {
+  padding: 5px 20px;
+  transition: all 1s;
+}
+
+#popUp {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 800px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#popUp > div > i {
+  background-color: rgb(186, 177, 177);
+  border-radius: 5px;
+  display: block;
+  font-size: 30px;
+  float: right;
+  margin-bottom: 10px;
+}
+#popUp > div:hover {
+  cursor: pointer;
+}
+#popUp > div > a {
+  font-size: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+#popUp > div > a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#popUp > div > a:visited {
+  color: rgb(6, 6, 56);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#popUp > div > a:hover {
+  color: rgb(43, 158, 5);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#grayBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 8, 79, 0.966);
+  z-index: 10;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 600px) {
